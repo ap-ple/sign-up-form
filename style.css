@@ -31,7 +31,11 @@ main {
 
 .banner h1 {
    font-family: Norse;
-   font-size: 4rem;
+   font-size: 6rem;
+}
+
+.banner footer {
+   font-size: 0.9rem;
 }
 
 .content {
@@ -88,6 +92,7 @@ main {
 #create-account>fieldset>div>div {
    display: flex;
    flex-flow: column;
+   gap: 0.2rem;
 }
 
 #create-account label {
@@ -98,15 +103,38 @@ main {
 
 #create-account input {
    width: 15rem;
-   border-color: solid #E5E7EB;
+   border: solid 0.1rem #E5E7EB;
+   border-radius: 0.25rem;
+   font-size: 1rem;
+   padding: 0.25rem;
+}
+
+#create-account input:focus {
+   outline: solid 0.1rem blue;
+   box-shadow: black 0.2rem 0.2rem 1rem -0.7rem;
+}
+
+#create-account input[type=password]:invalid {
+   outline: solid 0.1rem red;
 }
 
 #create-account>button {
    align-self: flex-start;
    padding: 0.75rem 3rem;
+   font-size: 1rem;
    font-weight: bold;
    background: #596D48;
    border: none;
    border-radius: 0.4rem;
    color: white;
+   box-shadow: black 0.2rem 0.2rem 1rem -0.7rem;
+}
+
+#create-account>button:hover {
+   cursor: pointer;
+   background: #6b8356;
+}
+
+#create-account>button:active {
+   background: #799461;
 }
