@@ -26,6 +26,10 @@ main {
    align-items: center;
    justify-content: space-between;
    background: lightgreen;
+   background-image: url("images/jungle.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
    width: 35%;
    height: 100%;
 }
@@ -33,18 +37,25 @@ main {
 .banner h1 {
    font-family: Norse;
    font-size: 6rem;
+   color: white;
    height: 8rem;
    width: 100%;
    margin: 20vh;
    display: flex;
    align-items: center;
    justify-content: center;
-   background: rgba(0, 0, 0, 0.2);
+   background: rgba(0, 0, 0, 0.5);
 }
 
 .banner footer {
    font-size: 0.9rem;
    margin: 1rem;
+   color: white;
+   text-shadow: black 0 0.05rem;
+}
+
+.banner a {
+   color: white;
 }
 
 .content {
