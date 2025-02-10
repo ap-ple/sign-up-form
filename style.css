@@ -114,6 +114,11 @@ main {
    box-shadow: black 0.2rem 0.2rem 1rem -0.7rem;
 }
 
+#create-account label[aria-required=true]::after {
+   content: " *";
+   color: red;
+}
+
 #create-account input[type=password]:invalid {
    outline: solid 0.1rem red;
 }
